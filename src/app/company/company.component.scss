@@ -1,0 +1,49 @@
+.company {
+    width: 100%;
+    border-radius: 15px;
+    background: #FFF;
+    
+    &-name {
+        display: flex;
+        align-items: center;
+        height: 43px;
+        background-color: #f0f1f3;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        img {
+            width: auto;
+            height: 150px;
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding-bottom: 10px;
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    &__contact {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        border: 1px solid #0000EE;
+        padding: 20px;
+
+        &-title {
+            font-style: italic;
+            font-weight: bold;
+        }
+    }
+}

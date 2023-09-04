@@ -1,0 +1,18 @@
+main {
+    width: 100%;
+    max-width: 1296px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.companies__list {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+
+    &-item {
+        list-style-type: none;
+        border-bottom: 1px solid #ecedef;
+        margin-bottom: 20px;
+    }
+}

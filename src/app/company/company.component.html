@@ -1,0 +1,26 @@
+<div class="company">
+    <div class="company-name">{{ company.name | uppercase }}</div>
+    <div class="company__info">
+        <img [src]="getImage" [alt]="company.name">
+        <div class="company__contacts">
+            <div>{{ company.name }}, {{ company.country }}.</div>
+            <a [href]="company.website">{{ company.website }}</a>
+            <div>
+                <b>E-mail:</b> {{ company.email }}
+            </div>
+            <div>
+                <b>Phone:</b> {{ company.phone }}
+            </div>
+        </div>
+        <div class="company__contact">
+            <div class="company__contact-title">Manager contact:</div>
+            <div>{{ company.contact.firstname }} {{ company.contact.lastname }}</div>
+            <div>
+                <b>E-mail:</b> {{ company.contact.email }}
+            </div>
+            <div>
+                <b>Phone:</b> {{ company.contact.phone }}
+            </div>
+        </div>
+    </div>
+</div>
